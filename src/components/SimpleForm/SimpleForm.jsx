@@ -3,10 +3,10 @@ const SimpleForm = () => {
         e.preventDefault();
         console.log(e.target.name.value)
         console.log(e.target.email.value)
-        console.log(e.target.number.value)
+        console.log(e.target.password.value)
     }
 
-    
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -14,7 +14,7 @@ const SimpleForm = () => {
                 <br />
                 <input type="email" name="email" />
                 <br />
-                <input type="text" name="number" />
+                <input type="password" name="password" />
                 <br />
                 <input type="submit" value="Submit" />
             </form>
